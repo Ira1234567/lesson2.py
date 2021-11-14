@@ -12,5 +12,3 @@ def arithmetic(a, b, c):
     else:
         return "Неизвестная операция"
 
-
-print(arithmetic(5, 6, "+"))
