@@ -1,16 +1,23 @@
+def check_password(username, password):
+    usernames_and_passwords = {'name1': '1234', 'name2': '2345', 'name3': '3456', 'name4': '4567'}
+    if username in usernames_and_passwords and usernames_and_passwords[username] == password:
+        return True
+    else:
+        return False
+
+
+def authenticate():
+    return True
+
 def decorator1(funk1):
     def funk2(check_password, authenticate):
         funk1
-        def check_password(username, password):
-            usernames_and_passwords = {'name1': '1234', 'name2': '2345', 'name3': '3456', 'name4': '4567'}
-            if username in usernames_and_passwords and usernames_and_passwords[username] == password:
-                return True
-            else:
-                return False
-        def authenticate():
+        check_password(username1, password1)
+        authenticate
+        if check_password(username1, password1) == True and authenticate == True:
             return True
-        if check_password(username1, password1) == True and authenticate() == True:
-            return True
+    return check_password
+    return authenticate
     return funk2
 
 @decorator1
