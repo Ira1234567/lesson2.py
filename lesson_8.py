@@ -11,9 +11,6 @@ def authenticate():
 
 def decorator1(funk1):
     def funk2(check_password, authenticate):
-        funk1
-        check_password(username1, password1)
-        authenticate
         if check_password(username1, password1) == True and authenticate == True:
             return True
     return check_password
