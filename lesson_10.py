@@ -26,7 +26,6 @@ def decorator1(func1):
 
 @decorator1
 def login(username, password):
-    print('login done')
     return True
 
 import argparse
